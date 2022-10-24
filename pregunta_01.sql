@@ -29,6 +29,6 @@ SELECT
     sum(c12)
 
 FROM
-    tabla1
+    tbl1
 """
 ).fetchall()

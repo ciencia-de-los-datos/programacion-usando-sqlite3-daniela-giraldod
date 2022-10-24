@@ -20,4 +20,4 @@
     SELECT
       count(*)
     FROM
-      tabla1
+      tbl1

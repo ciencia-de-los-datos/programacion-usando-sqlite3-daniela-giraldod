@@ -17,11 +17,6 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-
-import pandas as pd
-
-import sqlite3
-
 #iniciar conexion
 conn = sqlite3.connect(":memory:")  ## aca se indica el nombre de la db.
 cur = conn.cursor()

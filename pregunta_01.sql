@@ -17,18 +17,10 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-#iniciar conexion
-conn = sqlite3.connect(":memory:")  ## aca se indica el nombre de la db.
-cur = conn.cursor()
-#tabla1.to_sql(name="tabla1", con=conn, if_exists="replace")  ### hacer conexion de archivo com sql
 
-
-cur.execute(
-    """
 SELECT 
     sum(c12)
 
 FROM
     tbl1
-"""
-).fetchall()
+

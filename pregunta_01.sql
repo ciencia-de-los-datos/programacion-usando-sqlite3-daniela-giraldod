@@ -20,24 +20,12 @@
 
 import pandas as pd
 
-tabla1 = pd.read_csv(
-    "tbl1.csv",
-    sep=",",
-    thousands=None,
-    header=None,
-    decimal=".",
-    encoding="latin-1",
-    names=["K0", "K1", "c12", "c13","c14","c15","c16"]
-)
-#
 import sqlite3
 
 #iniciar conexion
 conn = sqlite3.connect(":memory:")  ## aca se indica el nombre de la db.
 cur = conn.cursor()
-tabla1.to_sql(name="tabla1", con=conn, if_exists="replace")  ### hacer conexion de archivo com sql
-
-#tabla1[0:1]
+#tabla1.to_sql(name="tabla1", con=conn, if_exists="replace")  ### hacer conexion de archivo com sql
 
 
 cur.execute(

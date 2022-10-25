@@ -37,4 +37,4 @@
 --  0  2018     6
 --
 --  >>> Escriba su codigo a partir de este punto <<<
-    select count(strftime("%Y",c14)) from tbl1 where strftime("%Y",c14) ="2018"
+    select count(*) from tbl1 where strftime("%Y",c14) ="2018"

@@ -42,5 +42,4 @@
 --  4  E  555.323077
 --
 --  >>> Escriba su codigo a partir de este punto <<<
-    select a.K0, AVG(b.c21)  AS "AVG(c21)" from tbl1 a , tbl2 b where a.K1 = b.K1 AND a.c13 > 400 group by K0
-
+    SELECT K0, avg(c21) FROM tbl1 JOIN tbl2 ON tbl1.K1 = tbl2.K1 WHERE c13>400 GROUP BY K0

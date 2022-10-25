@@ -37,4 +37,4 @@
 --  0  29  101.11  100  2017-11-17  0.42  MV-CB
 --
 --  >>> Escriba su codigo a partir de este punto <<<
---
+    select * from tbl2 where c21 = (select min(c21) from tbl2)

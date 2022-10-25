@@ -42,4 +42,7 @@
 --  4  E  474.825000
 -- 
 --  >>> Escriba su codigo a partir de este punto <<<
-    select K0, AVG(c12)  from tbl1 where c13> 400 group by K0
+    select K0, AVG(c12)  
+    from tbl1 
+    where c13> 400 
+    group by K0

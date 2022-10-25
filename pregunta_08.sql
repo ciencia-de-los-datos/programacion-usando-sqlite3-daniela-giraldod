@@ -40,4 +40,4 @@
 --  3  2019  550.998571
 --
 --  >>> Escriba su codigo a partir de este punto <<<
---
+    select strftime("%Y",c23), avg(c21) from tabla2 group by strftime("%Y",c23)
